@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --box-width: 200px;
+    --box-height: 100px;
+    --box-width-md: 400px;
+    --box-height-md: 210px;
+    --box-indent-top: 10px auto 10px auto;
+    --bg-color-box: gray;
+    --border:2px solid black;
+    --border-line: -4px;
+    --section-height: calc(var(--box-height) + 22px);
+    --section-height-md: calc(var(--box-height-md) + 22px);
+}
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.section{
+    background-color: #BDB5B5FF;
+    border: var(--border);
+}
+.box{
+    width: var(--box-width);
+    height: var(--box-height);
+    background-color: var(--bg-color-box);
+    margin: 10px;
+    border: var(--border);
+}
+/*sections*/
+.second{
+    width: 100%;
+    height: var(--section-height);
+}
+.first{
+    width: 100%;
+    height: var(--section-height);
+}
+.third{
+    width: 100%;
+    height: var(--section-height);
+}
+.fourth{
+    width: 100%;
+    height: var(--section-height-md);
+}
+.fifth{
+    width: 100%;
+    height: var(--section-height-md);
+}
+.fifth-boxes{
+    width: 100%;
+    margin-top: 10px;
+}
+.indent__box{
+    position: relative;
+    bottom: 10px;
+    left: calc(var(--box-width-md) + 220px);
+    width: var(--box-width-md);
+    height: var(--box-height);
+    background-color: var(--bg-color-box);
+    margin: 10px 40vh;
+    border: var(--border);
+}
+.md{
+    width: var(--box-width-md);
+    height: var(--box-height-md);
+}
+.lg{
+    width: calc(var(--box-width-md) + var(--box-width));
+    height: var(--box-height-md);
+    position: static;
+    margin: 10px 40vh;
+}
